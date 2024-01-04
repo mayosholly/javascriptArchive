@@ -1,0 +1,30 @@
+How to Add JavaScript in HTML Document ?
+
+In this article, we are going to learn how can we add JavaScript to an HTML document. JavasScript code is inserted between <script> and </script> tags when used in an HTML document. Scripts can be placed inside the body or the head section of an HTML page or inside both the head and body. We can also place JavaScript outside the HTML file which can be linked by specifying its source in the script tag.
+
+
+Add JavaScript Code inside the Head Section
+JavaScript code is placed inside the head section of an HTML page and uses the <script> element. Insert the <script> tag between the opening <head> and closing </head> tags, and place your JavaScript code inside. This ensures the script is loaded and executed when the page loads.
+
+Add JavaScript Code inside Body Section
+JavaScript Code is placed inside the body section of an HTML page and in this also we use <script> </script> tag inside and above the closing tag of </body>.
+
+
+
+External JavaScript
+JavaScript can also be used in external files. The file extension of the JavaScript file will be .js. To use an external script put the name of the script file in the src attribute of a script tag. External scripts cannot contain script tags. 
+
+Advantages of External JavaScript
+Cached JavaScript files can speed up page loading.
+It makes JavaScript and HTML easier to read and maintain.
+It separates the HTML and JavaScript code.
+It focuses on code reusability which is one JavaScript Code that can run in various HTML files.
+External JavaScript References
+We can reference an external script in three ways in javascript:
+
+By using a full URL:
+src = "https://www.geeksforgeek.org/js/script.js"
+By using a file path:
+src = "/js/script.js"
+Without using any path:
+src = "script.js"
