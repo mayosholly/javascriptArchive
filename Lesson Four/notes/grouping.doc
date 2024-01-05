@@ -1,0 +1,7 @@
+JavaScript Grouping Operator
+The Grouping operator consists of a pair of parentheses around an expression or sub-expression to override the normal operator precedence so that expressions with lower precedence can be evaluated before an expression with higher priority. This operator can only contain expressions. The parameter list is passed to a function within this operator which will treat it as an expression.
+
+Syntax:
+
+( )
+This ( ) operator controls the precedence of evaluation in expressions

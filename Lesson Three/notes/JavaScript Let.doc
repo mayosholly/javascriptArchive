@@ -1,0 +1,22 @@
+JavaScript Let
+JavaScript let is a keyword used to declare variables that are block-scoped. Variables defined with the let keyword cannot be redeclared and must be declared before use.
+
+let keyword was added in the ES6 or ES2015 version of JavaScript. Generally, it is suggested that we use the let keyword while working with JavaScript.
+
+Syntax:
+let variable_name = value;
+Block Scope
+The variables which are declared inside the { } block are known as block-scoped variables. variables declared by the var keyword cannot be block-scoped.
+
+
+Global Scope
+A global scope variable is a variable declared in the main body of the source code, outside all functions.
+
+Function Scope
+A function scope variable is a variable declared inside a function and cannot be accessed outside the function.
+
+Redeclaring Variables in different blocks
+The variables declared using let can be redeclared inside other blocks.
+
+Redeclaring Variables in the same blocks
+We cannot redeclare variables using the let keyword inside the same blocks. It will throw an error.

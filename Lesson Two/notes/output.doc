@@ -1,0 +1,42 @@
+JavaScript Output
+JavaScript Output defines the ways to display the output of a given code.
+
+The output can be displayed by using different approaches which are listed below:
+
+
+Approach 1: Using innerHTML
+It is used to access an element. It defines the HTML content.
+
+ Syntax:
+document.getElementById("id").innerHTML;
+
+
+Approach 2: Using document.write()
+It is used for testing purpose. 
+
+Syntax:
+document.write();
+
+
+Approach 3: Using window.alert():
+It displays the content using an alert box. 
+
+
+Approach 4: Using console.log()
+It is used for debugging purposes. 
+
+Syntax:
+console.log();
+
+Approach 5: Using window.prompt()
+It Allows to take input from user.
+
+Syntax:
+window.prompt();
+
+
+Approach 6: Using appendChild()
+This method allows you to append content to an HTML element.
+
+Syntax:
+element.appendChild(node);

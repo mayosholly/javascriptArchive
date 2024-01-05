@@ -1,0 +1,18 @@
+Global and Local variables in JavaScript
+Global Variable
+These are variables that are defined in global scope i.e. outside of functions. These variables have a global scope, so they can be accessed by any function directly. In the case of global scope variables, the keyword they are declared with does not matter they all act the same. A variable declared without a keyword is also considered global even though it is declared in the function.
+
+Local Variable
+When you use JavaScript, local variables are variables that are defined within functions. They have local scope, which means that they can only be used within the functions that define them. Accessing them outside the function will throw an error
+
+How to use variables
+The scope of a variable or function determines what code has access to it.
+Variables that are created inside a function are local variables, and local variables can only be referred to by the code within the function.
+Variables created outside of functions are global variables, and the code in all functions has access to all global variables.
+If you forget to code the var keyword in a variable declaration, the JavaScript engine assumes that the variable is global. This can cause debugging problems.
+In general, it’s better to pass local variables from one function to another as parameters than it is to use global variables. That will make your code easier to understand with less chance of errors.
+
+Where to use which variable
+Although it may seem easier to use global variables than to pass data to a function and return data from it, global variables often create problems. That’s because any function can modify a global variable, and it’s all too easy to misspell a variable name or modify the wrong variable, especially in large applications. That, in turn, can create debugging problems.
+In contrast, the use of local variables reduces the likelihood of naming conflicts. For instance, two different functions can use the same names for local variables without causing conflicts. That of course, means fewer errors and debugging problems. With just a few exceptions, then, all of the code in your applications should be in functions so all of the variables are local.
+If you misspell the name of a variable that you’ve already declared, it will be treated as a new global variable. With this in mind, be sure to include the keyword when you declare new variables and always declare a variable before you refer to it in your code.

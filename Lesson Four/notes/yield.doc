@@ -1,0 +1,14 @@
+JavaScript yield Operator
+JavaScript yield operator is used to delegate control of a generator function to another generator function or iterable object. It allows you to yield the values of an inner generator or iterable object from within an outer generator function. This operator is useful in a variety of scenarios, such as when working with iterators, asynchronously processing data, or implementing coroutines.
+
+In this article, we’ll explore the basics of the yield operator and how it can be used to improve the performance and functionality of your JavaScript code.
+
+Only the generator function it’s included in can call yield directly. Nested functions and callbacks are not permitted to invoke it. 
+
+The next() function of the generator returns an IteratorResult object with the properties value and is done when the yield keyword is used to invoke the method. The generator function has not entirely finished running while done is false, as seen by the value property, which is the outcome of evaluating the yield expression.
+
+Syntax:
+
+[rv] = yield [expression]
+expression: This defines the value that the generator function will return via the iterator protocol.
+rv: It returns the optional value that was supplied to the generator’s next() function so that it may carry on with its execution.

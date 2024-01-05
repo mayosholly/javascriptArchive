@@ -1,0 +1,11 @@
+JavaScript typeof Operator
+In JavaScript, the typeof operator returns the data type of its operand in the form of a string. The operand can be any object, function, or variable. 
+
+Syntax:
+
+typeof operand
+OR
+
+typeof (operand)
+Note: Operand is an expression representing the object or primitive whose type is to be returned. The possible types that exist in javascript are:
+

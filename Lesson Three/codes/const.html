@@ -1,0 +1,84 @@
+<!-- Example 1: It describes that the const variable cannot be reassigned. 
+
+ -->
+
+ <script>
+    const x = 12;
+x = 13;
+x += 1;
+
+
+
+// Example 2: It describes the const variable which contains the Block Scope. 
+
+const x = 22;
+{
+	const x = 90;
+	console.log(x);
+
+	{
+		const x = 77;
+		console.log(x);
+	}
+	{
+		const x = 45;
+		console.log(x);
+	}
+}
+console.log(x);
+
+
+// Example 3: It describes the const variable and assigned it after declaration. 
+
+const x;
+x = 12;
+
+
+// Example 4: It describes the const variable cannot be Hoisted. 
+
+x = 3;
+console.log(x);
+const x;
+
+
+// Example 5: It describes that the array values can be modified only reference to the array cannot be changed. 
+
+// Changing the content of array is
+// possible in cost array
+const arr1 = ["pankaj", "sumit", "chandan", "ajay"];
+
+console.log(arr1.toString());
+
+arr1[2] = "Narayan"; // possible
+
+console.log(arr1.toString());
+
+
+// Example 6: It describes that the object properties can be modified only reference to the object cannot be changed. 
+
+const person = {
+	first_name: "Pankaj",
+	last_name: "Singh",
+	Age: 20,
+	About: "Web Developer and Competitive Programmer"
+};
+
+console.log(person);
+
+// It is possible
+person.first_name = "Aryan";
+person.last_name = "Yadav";
+person.Age = 22;
+person.About = "Commerce undergraduate";
+
+console.log(person);
+
+// it is not possible
+// const person={
+// "first_name":"Aryan",
+// "last_name":"Yadav",
+// "Age":22,
+// "About":"Commerce undergraduate"
+// }
+
+ </script>

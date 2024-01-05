@@ -1,0 +1,57 @@
+<script>
+    // Example 1: In this example, we will declare a global variable and access it anywhere inside the program
+
+var test = 12
+function foo(){
+  var new = 11
+	console.log(test);
+}
+foo();
+console.log(new)
+
+
+// Example 2: In this example, we will declare multiple variables in a single statement
+
+var test1 = 12,
+	test2= 14,
+	test3 = 16
+function foo(){
+	console.log(test1, test2, test3);
+}
+foo();
+
+
+
+// Example 3: In this example, we will see the hoisting of variables declared using var
+
+console.log(test);
+var test = 12;
+
+
+// Example 4: In this example, we will redeclare a variable in the same global block
+
+var test = 12;
+var test = 100;
+console.log(test);
+
+
+
+// Example 5: In this example, we will redeclare the variable in another scope and see how it is the original variable.
+
+var test = 12;
+function foo(){
+	var test = 100;
+	console.log(test);
+}
+foo();
+console.log(test);
+
+
+// Example 6: In this example, we will try to delete a global variable declared using va in the ‘use strict’ mode
+
+'use strict';
+var test = 12;
+delete(test);
+console.log(test);
+
+</script>

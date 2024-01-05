@@ -1,0 +1,92 @@
+<script>
+    // Example: This example checks the typeof of a string, number, and undefined object and returns the value in the console.
+
+// "string"
+console.log(typeof 'mukul')
+
+// "number"
+console.log(typeof 25)
+
+// "undefined"
+console.log(typeof variable)
+
+
+// Example: Typeof Number, in this sample, we used ‘===’ (strict equality comparison operator) which compare value and type both and then return true or false. For example- consider the first console.log(), the js starts compiling from left to right and it first calculates the type of 25 which is ‘number’, and then compares it with ‘number’ and then finally returns true or false accordingly. 
+
+//Number
+console.log(typeof 25 === 'number');
+console.log(typeof 3.14 === 'number');
+console.log(typeof (69) === 'number');
+
+// log base 10
+console.log(typeof Math.LN10 === 'number');
+console.log(typeof Infinity === 'number');
+
+// Despite being "Not-A-Number"
+console.log(typeof NaN === 'number');
+
+// Wrapping in Number() function
+console.log(typeof Number('100') === 'number');
+
+
+// Example: Typeof string 
+
+// string
+console.log(typeof '' === 'string');
+console.log(typeof 'bla' === 'string');
+
+// ES6 template literal
+console.log(typeof `template literal` === 'string');
+console.log(typeof '1' === 'string');
+console.log(typeof (typeof 1) === 'string');
+
+// Wrapping inside String() function
+console.log(typeof String(1) === 'string');
+
+
+//  Example: Typeof boolean 
+
+// Boolean
+console.log(typeof true === 'boolean');
+console.log(typeof false === 'boolean');
+
+// Two calls of the ! (logical NOT) operator
+// are equivalent to Boolean()
+console.log(typeof !!(1) === 'boolean');
+
+
+//  Example: Typeof undefined 
+
+// Undefined
+console.log(typeof undefined === 'undefined');
+
+// Declared but undefined variable
+console.log(typeof variable === 'undefined');
+
+
+//  Example: Typeof symbol 
+
+// Symbol
+console.log(typeof Symbol() === 'symbol');
+console.log(typeof Symbol('party') === 'symbol');
+console.log(typeof Symbol.iterator === 'symbol');
+
+
+//  Example: Typeof object 
+
+// Object
+console.log(typeof { b: 1 } === 'object');
+console.log(typeof [1, 2, 9] === 'object');
+console.log(typeof new Date() === 'object');
+
+
+//  Example: Typeof function 
+
+// function
+console.log(typeof function () { } === 'function');
+
+//classes too are objects
+console.log(typeof class C { } === 'function');
+console.log(typeof Math.sin === 'function');
+
+</script>

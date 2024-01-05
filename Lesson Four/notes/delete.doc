@@ -1,0 +1,14 @@
+JavaScript delete Operator
+n JavaScript, the delete Operator’s main purpose is to remove a property from an object. In this article, we are going to learn about delete Operator in JavaScript.
+
+Syntax:
+delete object
+// or
+delete object.property
+// or
+delete object['property']
+Parameter:
+It does not take any parameters.
+
+Return type:
+This operator returns true if it removes a property. While deleting an object property that doesn’t exist will return a true but it will not affect the object. However, while trying to delete a variable or a function will return a false.

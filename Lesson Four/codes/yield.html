@@ -1,0 +1,33 @@
+<!-- Example 1: To use the yield operator, you must first define a generator function using the function* syntax. Within the generator function, you can use the yield keyword to pause the function’s execution and return a value.  -->
+
+<script>
+    function* innerGenerator() { 
+	yield 1; 
+	yield 2; 
+	yield 3; 
+} 
+
+function* outerGenerator() { 
+	yield* innerGenerator(); 
+} 
+
+const generator = outerGenerator(); 
+
+console.log(generator.next().value); 
+console.log(generator.next().value); 
+console.log(generator.next().value);
+
+
+// Example 2: You can also pass a value to the generator by calling the next method with an argument. This value will be the result of the yield expression in the generator function. 
+
+function* generator() { 
+	const value = yield 1; 
+	console.log(value); 
+} 
+
+const iter = generator(); 
+
+iter.next(); 
+iter.next('hello');
+
+</script>

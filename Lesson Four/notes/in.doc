@@ -1,0 +1,10 @@
+JavaScript in Operator
+JavaScript in operator is an inbuilt operator which is used to check whether a particular property exists in an object or not. It returns a boolean value true if the specified property is in an object, otherwise, it returns false.
+
+Syntax:
+prop in object
+Parameters:
+prop: This parameter holds the string or symbol that represents a property name or array index.
+object: This parameter is an Object that is to be checked whether it contains the prop.
+Return value:
+This method returns a boolean value. The value true is returned if the specified property is found in an object, else it returns false.

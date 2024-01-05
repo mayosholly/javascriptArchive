@@ -1,0 +1,71 @@
+<!-- Example 1: Below is an example of the in-operator.
+
+ -->
+
+ <script>
+    function gfg() {
+	// Illustration of in operator 
+	const array = ['geeks', 'for',
+		'geeks']
+
+	// Output of the indexed number 
+	console.log(0 in array);
+
+	// Output of the Value 
+	console.log('for' in array);
+
+	// output of the Array property 
+	console.log('length' in array);
+}
+gfg();
+
+ </script>
+
+ <!-- Example 2: This example shows the use of the in operator in Javascript.
+
+ -->
+
+ <script>
+    // Illustration of in operator
+const array = ['geeksforgeeks', 'geeksfor',
+	'geeks', 'geeks1']
+
+// Output of the indexed number
+console.log(0 in array)
+console.log(2 in array)
+console.log(5 in array)
+
+// Output of the Value
+console.log('for' in array)
+console.log('geeksforgeeks' in array)
+
+// output of the Array property
+console.log('length' in array)
+
+ </script>
+
+<!-- Example 3: This example shows the use of the in operator in Javascript.
+
+ -->
+
+ <script>
+    // Illustration of in operator
+const object = {
+	val1: 'Geeksforgeeks',
+	val2: 'Javascript',
+	val3: 'operator',
+	val4: 'in'
+};
+
+console.log('val1' in object);
+
+delete object.val1;
+console.log('val1' in object);
+
+if ('val1' in object === false) {
+	object.val1 = 'GEEKSFORGEEKS';
+}
+
+console.log(object.val1);
+
+ </script>

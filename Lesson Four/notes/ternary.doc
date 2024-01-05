@@ -1,0 +1,19 @@
+JavaScript Ternary Operator
+JavaScript Ternary Operator (Conditional Operator) is a concise way to write a conditional (if-else) statement. Ternary Operator takes three operands i.e. condition, true value and false value. In this article, we are going to learn about Ternary Operator.
+
+Examples:
+Input: let result = (10 > 0) ? true : false;
+Output: true
+
+Input: let message = (20 > 15) ? "Yes" : "No";
+Output: Yes
+Syntax:
+condition ? trueExpression : falseExpression
+Operands:
+condition: Expression to be evaluated which returns a boolean value.
+value if true: Value to be executed if the condition results in a true state.
+value if false: Value to be executed if the condition results in a false state.
+Characteristics of Ternary Operator
+The expression consists of three operands: the condition, value if true, and value if false.
+The evaluation of the condition should result in either a true/false or a boolean value.
+The true value lies between “?” & “:” and is executed if the condition returns true. Similarly, the false value lies after “:” and is executed if the condition returns false.

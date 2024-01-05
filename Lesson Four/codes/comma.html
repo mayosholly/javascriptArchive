@@ -1,0 +1,36 @@
+<!-- Example 1: Below is an example of the Comma operator.
+
+ -->
+
+ <script>
+    function Func1() { 
+	console.log('one'); 
+	return 'one'; 
+} 
+function Func2() { 
+	console.log('two'); 
+	return 'two'; 
+} 
+function Func3() { 
+	console.log('three'); 
+	return 'three'; 
+} 
+
+// Three expressions are 
+// given at one place 
+let x = (Func1(), Func2(), Func3()); 
+
+console.log(x);
+
+ </script>
+
+ <!-- Example 2: The most useful application of the comma operator is in loops. In loops, it is used to update multiple variables in the same expression.
+
+ -->
+
+ <script>
+    for (let a = 0, b =5; a <= 5; a++, b--) { 
+	console.log(a, b); 
+}
+
+ </script>

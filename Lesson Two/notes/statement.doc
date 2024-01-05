@@ -1,0 +1,29 @@
+JavaScript Statements
+The programming instructions written in a program in a programming language are known as statements. The order of execution of Statements is the same as they are written.
+
+Semicolons
+Semicolons separate JavaScript statements.
+A semicolon marks the end of a statement in JavaScript. 
+
+
+Code Blocks
+JavaScript statements can be grouped together inside curly brackets. Such groups are known as code blocks. The purpose of grouping is to define statements to be executed together. 
+
+
+White Space
+JavaScript ignores multiple white spaces.
+
+Line Length and Line Breaks
+JavaScript code’s preferred line length by most programmers is up to 80 characters. The best place to break a code line in JavaScript, if it doesn’t fit, is after an operator. 
+
+Keywords
+Keywords are reserved words and cannot be used as a variable name. A JavaScript keyword tells about what kind of operation it will perform. 
+
+Some commonly used keywords are:
+break and continue: break keyword is used to terminate a loop and continue is used to skip a particular iteration in a loop and move to the next iteration.
+do…. while: In this, the statements written within the do block are executed till the condition in while is true.
+for: It helps in executing a block of statements till the condition is true.
+function: This keyword is used to declare a function.
+return: This keyword is used to exit a function.
+switch: This helps in executing a block of codes depending on different cases.
+var, let, and const: These keywords are used to declare a variable in js. 

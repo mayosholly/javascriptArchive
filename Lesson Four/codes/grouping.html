@@ -1,0 +1,59 @@
+<!-- Example 1: Below is an example of the Grouping operator. 
+ -->
+
+ <script>
+    function gfg() {
+	// 3 * (2 + 3)
+	let value1 = 3 * (2 + 3);
+	// (3 + 2) * 3
+	let value2 = (3 + 2) * 3;
+	console.log(value1);
+	console.log(value2);
+}
+gfg();
+
+ </script>
+
+ <!-- Example 2: Function as a statement and exception. In the below code, JavaScript considers a function as a statement if it is not preceded by any other statement. But applying a grouping operator that has the highest precedence over any other operator considers the function as an expression and hence it gets fully evaluated. 
+
+ -->
+
+ <script>
+    function(x) { return x };
+// SyntaxError: Function statements 
+// require a function name.
+
+
+// function as expression
+(function (x) { return x });
+// This will run without any exception.
+
+ </script>
+
+ <!-- function(x) { return x };
+// SyntaxError: Function statements 
+// require a function name.
+
+
+// function as expression
+(function (x) { return x });
+// This will run without any exception.
+ -->
+
+ <script>
+    function gfg() {
+	// 5 * 5 + 5
+	// 25+5
+	// 30
+	let value = 5 * 5 + 5;
+	console.log("Without grouping operator: " + value);
+
+	// 5 * (5 + 5)
+	// 5*10
+	// 50
+	let value1 = 5 * (5 + 5);
+	console.log("With grouping operator: " + value1);
+}
+gfg();
+
+ </script>
