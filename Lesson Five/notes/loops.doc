@@ -1,0 +1,15 @@
+Loops in JavaScript
+
+
+Looping in programming languages is a feature that facilitates the execution of a set of instructions/functions repeatedly while some condition evaluates to true. For example, suppose we want to print “Hello World” 10 times. This can be done in two ways as shown below:
+
+Iterative Method: The iterative method to do this is to write the console.log() statement 5 times. 
+
+Using Loops: In Loop, the statement needs to be written only once and the loop will be executed 5 times as shown below: 
+
+
+Many things may seem confusing to you in the above program at this point in time but do not worry you will be able to understand everything about loops in JavaScript by the end of this tutorial. You can observe that in the above program using loops, we have used the console.log statement only once but still, the output of the program will be the same as that of the iterative program where we have used the console.log statement 10 times. In computer programming, a loop is a sequence of instructions that is repeated until a certain condition is reached.
+
+An operation is done, such as getting an item of data and changing it, and then some condition is checked such as whether a counter has reached a prescribed number.
+Counter not Reached: If the counter has not reached the desired number, the next instruction in the sequence returns to the first instruction in the sequence and repeats it.
+Counter reached: If the condition has been reached, the next instruction “falls through” to the next sequential instruction or branches outside the loop.

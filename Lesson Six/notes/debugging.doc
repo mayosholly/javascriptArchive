@@ -1,0 +1,18 @@
+Debugging in JavaScript
+In this article, we will learn about debugging in Javascript. Debugging is the term that means examining the code, finding the error in the code, and fixing that error.
+
+It is common to have errors while writing codes and the errors can be due to syntax or logic. These errors create a lot of ambiguity in the logic and understanding of both users and programmers. There can also be errors in the code which can remain invisible to the programmer’s eye and can create havoc. To identify these errors we need Debuggers that can go through the entire code or program, identify the errors and also fix them. 
+
+Using debugger keyword: The debugger keyword is used in the code to force stop the execution of the code at a breaking point and calls the debugging function. The debugger function is executed if any debugging is needed at all else no action is performed. 
+
+Previously implementing debuggers was tough but with time and with the advent of modern browsers, various built-in debuggers came into implementation. As previously mentioned the setting up of breakpoints breaks the line of code and flows the control to another area from where it is called. This can be done in the debugging window of the browser. Also setting up of breakpoints in javascript acts similar to the breakpoints in Java where the execution of the code stops and examination of the values is performed by the browser. One can resume the flow control after the examination is done. The debugging can be turned on or off depending upon the user’s convenience. This all can be done through the “Console” of the debugger menu.
+
+Use of console.log() method: There is another way in which the JS values can be displayed in the debugger window. 
+
+
+Setting Break Points: The console.log() is a good way to debug errors but setting breakpoints is a faster, more efficient, and better method. In this method, Breakpoints are set in code which stops the execution of code at that point so that the values of variables can be examined at that time. Here are some advantages of using Breakpoints over the console.log() method:
+
+In the console.log() method user has to understand the code and manually put console.log() at points in the code. But in the breakpoints method, we can set breakpoints through the Developer tool anywhere in the code without even knowing it.
+In the console.log() method we have to manually print values of different variables but at a certain breakpoint, all the values of all variables are displayed automatically in the Developers tool. Enter the Developers tool section by pressing F12 key and go to sources. In the source section, select a javascript file and set breakpoints by either selecting from the provided list like DOM breakpoints or Event listener breakpoints which stop the execution of code whenever an event occurs
+
+

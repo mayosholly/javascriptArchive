@@ -1,0 +1,91 @@
+<!-- Example -->
+
+<script>
+    // JavaScript program to illustrate for loop
+let x;
+
+// for loop begins when x=2
+// and runs till x <=4
+for (x = 2; x <= 4; x++) {
+	console.log("Value of x:" + x);
+}
+
+</script>
+
+<!-- Statement 1
+We can initialize the counter variable externally rather than in statement 1. This shows us clearly that statement 1 is optional. We can leave the portion empty with a semicolon. 
+
+Example:  -->
+
+<script>
+    let x = 2;
+
+for (; x <= 4; x++) {
+	console.log("Value of x:" + x);
+}
+
+</script>
+
+<!-- Statement 2
+This statement checks the boolean value of the testing condition. If the testing condition is true, the for loop will execute further. It is executed every time the for loop runs before the loop enters its body. If this statement returns true, the loop will start over again, otherwise, it will end and move over to the code following the loop body.
+
+This is also an optional statement and Javascript treats it as true if left blank. If this statement is omitted, the loop runs indefinitely if the loop control isn’t broken manually. It is explained below
+
+Example:  -->
+
+<script>
+    let x = 2;
+for (; ; x++) {
+	console.log("Value of x:" + x);
+	break;
+}
+
+</script>
+
+<!-- Statement 3
+It is a controlled statement that controls the increment/decrement of the counter variable. It is also optional by nature and can be done inside the loop body.
+
+Example:  -->
+
+<script>
+    const subjects = ["Maths", "Science", "Polity", "History"];
+let i = 0;
+let len = subjects.length;
+let gfg = "";
+for (; i < len;) {
+	gfg += subjects[i];
+	//can be increased inside loop
+	i++;
+}
+console.log(gfg)
+
+</script>
+
+<!-- for/in loop: There is another advanced loop called for/in loop which runs through all the properties of an object. The loop will be executed once for each property of the object. -->
+<script>
+    function GFG() {
+	let Platform = { fname: "geeks", Mname: "for", lname: "geeks", };
+
+	let text = "";
+	let x;
+	for (x in Platform) {
+		text += Platform[x] + " ";
+	}
+	console.log(text);
+}
+GFG()
+
+</script>
+
+<!-- The for/in loop can also be used over the properties of arrays. However, it is not advised to use for/in loop over arrays.  for/of and Array.forEach() loops are suggested to be used while working with arrays. -->
+
+<script>
+  const arr = [23, 54, 46, 3];
+
+let gfg = "";
+for (let i in arr) {
+	gfg += arr[i] + '\n';
+}
+console.log(gfg)
+  
+</script>

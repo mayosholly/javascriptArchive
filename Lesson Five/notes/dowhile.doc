@@ -1,0 +1,14 @@
+JavaScript do…while Loop
+A do… while loop in JavaScript is a control statement in which the code is allowed to execute continuously based on a given boolean condition. It is like a repeating if statement.
+
+The do…while loop can be used to execute a specific block of code at least once
+
+There are mainly two types of loops.
+
+Entry Controlled loops: In this type of loop, the test condition is tested before entering the loop body. For Loop and While Loops are entry-controlled loops.
+Exit Controlled Loops: In this type of loop the test condition is tested or evaluated at the end of the loop body. Therefore, the loop body will execute at least once, irrespective of whether the test condition is true or false. the do-while loop is exit controlled loop.
+Syntax:
+do {
+    // Statements
+}
+while(conditions)

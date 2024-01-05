@@ -1,0 +1,36 @@
+JavaScript Errors Throw and Try to Catch
+When executing JavaScript code, errors will definitely occur. These errors can occur due to a fault from the programmer’s side or the input is wrong or even if there is a problem with the logic of the program.
+
+But all errors can be solved and to do so we use five statements that will now be explained.
+
+The try statement lets you test a block of code to check for errors.
+The catch statement lets you handle the error if any are present.
+The throw statement lets you make your own errors.
+The finally statement lets you execute code after try and catch.  
+The finally block runs regardless of the result of the try-catch block.
+
+Try and Catch Block
+The try statement allows you to check whether a specific block of code contains an error or not. The catch statement allows you to display the error if any are found in the try block.
+
+try {
+     Try Block to check for errors.
+}
+catch(err) {
+      Catch Block to display errors.
+}
+
+Javascript Throws Block The throw Statement
+When any error occurs, JavaScript will stop and generate an error message. The throw statement lets you create your own custom error. Technically you can throw your custom exception (throw an error). The exception can be a JavaScript Number, String, Boolean, or Object. By using throw together with try and catch, you can easily control the program flow and generate custom error messages. 
+
+The finally Block
+The finally Statement runs unconditionally after the execution of the try/catch block. Its syntax is
+
+try {
+     Try Block to check for errors.
+}
+catch(err) {
+      Catch Block to display errors.
+} 
+finally {
+      Finally Block executes regardless of the try / catch result.
+}

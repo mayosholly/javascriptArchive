@@ -1,0 +1,56 @@
+<!-- Delay JavaScript Loading
+ -->
+
+ // placing script at the end: 
+<html> 
+	<head> 
+		<title>My Page</title> 
+	</head> 
+	<body> 
+		<div id="user-greeting">Welcome back, user</div> 
+		<script type="text/javascript" src="my-script.js"></script> 
+	</body> 
+</html> 
+
+// using defer: 
+<script type="text/javascript" src="path/to/script2.js" defer></script> 
+
+
+<!-- Get rid of unnecessary loops and calls made inside loops.
+ -->
+ 
+ <script>
+    // push() method 
+	let Animals = ["Tiger", "Giraffe", "Horse", "Deer"]; 
+	Animals.push("Zebra"); 
+	console.log(Animals); 
+
+
+    // pop() method 
+	let Animals = ["Tiger", "Giraffe", "Horse", "Deer"]; 
+	Animals.pop(); 
+	console.log(Animals); 
+
+
+    // shift() method 
+	let Animals = ["Tiger", "Giraffe", "Horse", "Deer"]; 
+	Animals.shift(); 
+	console.log(Animals); 
+
+ </script>
+
+ <!-- Use the local scope (‘this’)
+ -->
+ let Organization = Object.create({ 
+    init: function(name) { 
+        this.name = name; 
+    }, 
+    do: function(callback) { 
+        callback.apply(this); 
+    } 
+    }); 
+    let geeksforgeeks = new Organization('geeksforgeeks'); 
+    geeksforgeeks.do(function() { 
+        alert(this.name); // 'geeksforgeeks' gets alerted because we rewired 'this'. 
+    }); 
+    

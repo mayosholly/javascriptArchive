@@ -1,0 +1,36 @@
+7 Loops of JavaScript
+As a programmer, it’s crucial to comprehend loops since they give you a means to repeatedly run a block of code. Loops are a fundamental idea in computer programming. Using loops has a number of advantages, including.
+
+Your code will be more effective if you use loops to automate repetitive processes and carry out the same actions repeatedly with little code.
+To regulate the flow of execution based on specific conditions, loops can be used in conjunction with conditional statements.
+When processing huge amounts of data, such as iterating through array elements or database records, loops are frequently utilized.
+Through the repeated execution of code in response to input from the user or other events, loops can be utilized to develop dynamic and interactive applications.
+In JavaScript, there are 7 types of loops that can be used to execute a block of code repeatedly. Each loop has its own specific use case and syntax, and choosing the right one depends on the problem you’re trying to solve. It’s important to understand the differences between these loops and when to use each one to write efficient and effective code. Here we have briefly discussed these loops:
+
+Below all 7 loops are briefly described with an example code:
+
+JavaScript for Loop
+A for loop is used when you know how many times you need to repeat a certain block of code. It takes three statements.
+
+Initialization statement
+Condition Statement
+Increment statement.
+
+JavaScript while Loop
+A while loop is used when you don’t know how many times you need to repeat a block of code, but you know the condition that will end the loop.
+
+JavaScript do-while Loop
+A do-while loop is similar to a while loop, but the block of code is executed at least once, even if the condition is false.
+
+JavaScript for-in Loop
+A for-in loop is used to loop through the properties of an object.
+
+JavaScript for-of Loop
+A for-of loop is used to loop through the values of an iterable object (such as an array.
+
+
+JavaScript forEach loop
+A forEach loop is a method on arrays that executes a function for each element in the array.
+
+JavaScript map Loop
+A map loop is a method on arrays that creates a new array by executing a function on each element in the array.

@@ -1,0 +1,29 @@
+JavaScript | Performance
+Performance in Javascript
+
+JavaScript is an essential part of almost every web app and web-based software. JavaScript’s client-side scripting capabilities can make applications more dynamic and interactive, but it also increases the chance of inefficiencies in code. Thus, poorly written JavaScript can make it difficult to ensure a consistent and healthy experience for all users.
+
+Guide below will enlighten you about the causes of JavaScript performance issues and provide some of the best practices for optimizing JavaScript code.
+
+Use fast DOM traversal with document.getElementById().
+Given the availability of jQuery, it is much easier to produce highly specific selectors based on a combination of tag names, classes, and CSS3. You need to be aware that this approach involves several iterations while jQuery loops through each of DOM elements and tries to find a match. You can improve DOM traversal speeds by picking a specific element by ID.
+
+The above code makes use of JQuery to manipulate the DOM which is not the best option as instead of doing it this way we can make use of the getElementById method which the document object provides us.
+
+
+Delay JavaScript Loading
+Where we load our style sheets and JavaScript files can have an effect on the perceived speed of a page if the user can see some content even before the JavaScript takes in it’s a much better experience when a browser encounters a script tag it stops what it’s doing completely to download and run the script if we put our scripts at the top of the page that means it’s downloading our JavaScript files first and then later getting down to parse our HTML body this means while our scripts are downloading there is no content for the user to see now if we put our scripts at the bottom of the page instead by the time, our script starts loading there’s at least some content on the page making the page seem to have loaded faster.
+
+An alternative is to use defer in the script tag. The defer attribute specifies that the script should be executed after the page has finished parsing, but it only works for external scripts.
+
+Use ‘switch’ instead of lengthy ‘if-then-else’ statements.
+When your code base gets bigger a switch statement is usually more efficient than a set of nested ifs. This is because ‘switch’ statements can be optimized more easily during compilation.
+
+Get rid of unnecessary loops and calls made inside loops.
+Array push() pop() and shift() instructions have minimal processing overhead due to being language constructs closely related to their low-level assembly language counterparts.
+
+Minimize your code as much as you can
+Bundling your application’s components into *.js files and passing them through a JavaScript minification tool will make your code cleaner. There are tons of code minification tools that are available for free.
+
+Use the local scope (‘this’)
+This is particularly useful for writing asynchronous code using callbacks, however, it also improves performance because you are not relying on global or closure variables held further up the scope chain. You can get the most out of the scope variable (this) by rewiring it using the special call() and apply() methods that are built into each function. See the example below:

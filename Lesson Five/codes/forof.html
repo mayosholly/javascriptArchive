@@ -1,0 +1,74 @@
+<!--  Example 1: The following snippet demonstrates the for..of loop over an array.
+
+ -->
+
+ <script>
+    // Array of numbers
+let numArray = [1, 4, 16, 25, 49];
+
+console.log("Elements of numArray are->");
+
+// for...of Loop
+for (let value of numArray) {
+	console.log(value);
+}
+
+ </script>
+
+ <!-- Example 2: The following snippet demonstrates the for..of loop over a string.
+
+ -->
+
+ <script>
+    // String object
+let st = "Geeksforgeeks";
+
+// for..of loop
+console.log("Elements of string st are->");
+for (let value of st) {
+	console.log(value);
+}
+
+ </script>
+
+ <!-- Example 3: The following code demonstrates the for..of loop over an argument object.
+
+ -->
+
+ <script>
+    // Iterating over argument objects
+function Geeks() {
+	for (let value of arguments) {
+		console.log(value);
+	}
+}
+
+// Iterating over all arguments passed
+// through the function
+Geeks("Geeks", "for", "Geeks");
+
+ </script>
+
+ <!-- Example 4: The following code demonstrates the for..of loop over an argument objects
+
+ -->
+
+ <script>
+    // Map is an object that takes key-value pair as input
+let mapObject = new Map([
+	["Geeks", 1],
+	["For", 2],
+	["geeks", 3],
+]);
+
+console.log("Display of Key-Value Pair->")
+for (const entry of mapObject) {
+	console.log(entry);
+}
+
+console.log("Display of Value only->")
+for (const [key, value] of mapObject) {
+	console.log(value);
+}
+
+ </script>

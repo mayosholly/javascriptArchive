@@ -1,0 +1,9 @@
+JavaScript for…of Loop
+JavaScript for…of statement iterates over the values of an iterable object (like Array, Map, Set, arguments object, …,etc), executing statements for each value of the object.
+
+JavaScript for…of loop makes it easy to loop through the elements without needing to handle the index or iteration logic which makes the code short and easier to understand.
+
+Syntax:
+for ( variable of iterableObjectName) {
+   // code block to be executed
+}
