@@ -1,0 +1,15 @@
+Explain the Different Function States in JavaScript
+
+In Javascript, we can create functions in many different ways according to the need for the specific operation. For example, sometimes we need asynchronous functions or synchronous functions.  In this article, we will discuss the difference between the function Person( ) { }, let person = Person ( ), and let person = new Person ( ). 
+
+Function Declaration: The given below syntax is a declaration of the function. The code declares a function statement but does not execute until we don’t call them. Here Person is the name of the function. Functions in the javascript are declared using this method.
+
+function Person (){}
+
+Function Expression: In this code, a variable person is defined using the var keyword. We can also use const and let keywords. The person variable contains all the value references of the Person function. In javascript, every expression returns a value. The value may be undefined if the function doesn’t return and the value or the value will be the return type of the function. This function could be an anonymous function if the name is not assigned and wrapped in parenthesis interpreted as an expression. 
+
+Function Constructor: In this code, we are creating an instance using the new keyword. Here the person is the instance (object) of the Person. A function declaration is a regular function unless we create an instance of the function. The main advantage of the function constructor is to initialize the member values of the javascript functions.
+
+Once the instance is created, we can use the function by creating a variable as shown below example. 
+
+let person = new Person()

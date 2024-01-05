@@ -1,0 +1,17 @@
+Different ways of writing functions in JavaScript
+JavaScript Function is a block of code that is designed to perform a task and executed when it is been called or invoked.
+
+Below are the ways of writing functions in JavaScript:
+
+Function Declaration
+Function Declaration is the traditional way to define a function. It is somehow similar to the way we define a function in other programming languages. We start declaring using the keyword “function”. Then we write the function name and the parameters.
+
+Function Expression
+Function Expression is another way to define a function in JavaScript. Here we define a function using a variable and store the returned value in that variable.
+
+Arrow Functions
+Arrow functions are been introduced in the ES6 version of JavaScript. It is used to shorten the code. Here we do not use the “function” keyword and use the arrow symbol.
+
+This shortens the code to a single line compared to other approaches. In a single line of code, the function returns implicitly.
+
+Note: When there is a need to include multiple lines of code we use brackets. Also, when there are multiple lines of code in the bracket we should write return explicitly to return the value from the function.

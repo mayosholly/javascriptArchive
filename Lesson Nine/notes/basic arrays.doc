@@ -1,0 +1,131 @@
+JavaScript Basic Array Methods
+Method 1: JavaScript Array length 
+It is the property that returns the length of the given array.
+Syntax:
+Array.length
+
+Syntax:
+Array.length
+
+
+Method 3: JavaScript Array join() Method
+This method helps to join two arrays as a string. If we pass any parameter to this method it will join the array by using that parameter.
+
+Syntax:
+array.join(separator)
+Parameters: 
+This method accepts a single parameter and It is Optional i.e, it can be either used as a parameter or not. Its default value is a comma(, ).
+
+Method 4: JavaScript Array delete Method
+The delete operator used to delete the given value that can be object, array or anything.
+
+Syntax:
+delete object
+// or
+delete object.property
+// or
+delete object['property']
+Parameter: 
+It does not take any parameter.
+
+Method 5: JavaScript Array concat() Method
+The concat() method is used to concatinate the two arrays and it gives the mergerd array.
+
+Syntax:
+let newArray1 = oldArray.concat()
+let newArray2 = oldArray.concat(value0)
+let newArray3 = oldArray.concat(value0,value1)
+.......
+.......
+let newArray = oldArray.concat(value1 , [ value2, [ ...,[ valueN]]])
+Parameters:
+The parameters of this method are the arrays or the values that need to be added to the given array. The number of arguments to this method depends upon the number of arrays or values to be merged.
+
+
+
+Method 6: JavaScript Array flat() Method
+The Array flat() method is used to flattend the array that means it merge all the given array and reduce all the nesting present in it.
+
+Syntax:
+arr.flat([depth])
+Parameters:
+It specifies, how deep the nested array should be flattened. The default value is 1 if no depth value is passed as you guess it is an optional parameter.
+
+
+Method 7: Javascript Array.push() Method
+Adding Element at the end of an Array. As arrays in JavaScript are mutable objects, we can easily add or remove elements from the Array. And it dynamically changes as we modify the elements from the array. 
+
+Syntax:
+Array.push(item1, item2 …)
+Parameters:
+Items to be added to an array.
+
+
+
+Method 8: Javascript Array.unshift() Method
+This method is used to add elements to the front of an Array.
+
+Syntax:
+Array.unshift(item1, item2 …)
+Parameters:
+Items to be added to the array
+
+Example: In this example, we will be adding new elements to the beginning of the array using the unshift() method.
+
+
+
+Method 9: JavaScript Array.pop() Method
+This method is used to remove elements from the end of an array. 
+
+Syntax:
+Array.pop()
+Parameters:
+It takes no parameter
+
+
+
+Method 10: JavaScript Array.shift() Method
+This method is used to remove elements from the beginning of an array 
+
+Syntax:
+Array.shift()
+Parameter:
+it takes no parameter
+
+
+
+
+Method 11: JavaScript Array.splice() Method
+This method is used for the Insertion and Removal of elements in between an Array 
+
+Syntax:
+Array.splice (start, deleteCount, item 1, item 2….) 
+Parameters:  
+Start: Location at which to perform the operation.
+deleteCount: Number of elements to be deleted, if no element is to be deleted pass 0.
+Item1, item2 …..: this is an optional parameter. 
+
+
+
+Method 12: JavaScript Array.slice() Method
+This method returns a new array containing a portion of the original array, based on the start and end index provided as arguments
+
+Syntax: 
+Array.slice (startIndex , endIndex);
+Parameters:
+startIndex (optional) : An integer value representing the index at which to start extracting elements from the array. If not specified, the default value is 0, which means the slice starts at the beginning of the array.
+endIndex (optional): An integer value representing the index at which to stop extracting elements from the array (exclusive). If not specified, the default value is the length of the array, which means the slice extends to the end of the array.
+
+
+
+Method 13: JavaScript Array some() Method
+This method checks whether at least one of the elements of the array satisfies the condition checked by the argument function.
+
+
+Method 14: JavaScript Array reduce() Method
+The array reduce() method in JavaScript is used to reduce the array to a single value and executes a provided function for each value of the array (from left to right) and the return value of the function is stored in an accumulator.
+
+
+
+Method 15: JavaScript Array map() Method
+The map() method in JavaScript creates an array by calling a specific function on each element present in the parent array. It is a non-mutating method. Generally, the map() method is used to iterate over an array and call the function on every element of an array.

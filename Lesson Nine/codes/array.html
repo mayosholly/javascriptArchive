@@ -1,0 +1,152 @@
+<!-- 1. Creating an array using array literal:
+ -->
+
+ <script>
+    // Initializing while declaring
+let courses = ["HTML", "CSS", "Javascript", "React"];
+console.log(courses)
+
+ </script>
+
+ <!-- 2. Creating an array using the JavaScript new keyword:
+ -->
+ <script>
+    // Initializing while declaring
+let arr1 = new Array(3)
+arr1[0] = 10
+arr1[1] = 20
+arr1[2] = 30
+console.log("Array 1: ", arr1)
+
+// Creates an array having elements 10, 20, 30, 40, 50
+let arr2 = new Array(10, 20, 30, 40, 50);
+console.log("Array 2: ", arr2)
+
+// Creates an array of 5 undefined elements
+let arr3 = new Array(5);
+console.log("Array 3: ", arr3)
+
+// Creates an array with one element
+let arr4 = new Array("1BHK");
+console.log("Array 4: ", arr4)
+
+ </script>
+
+ <!-- Accessing Elements of an Array
+ -->
+<script>
+    const courses = ["HTML", "CSS", "Javascript"];
+console.log(courses[0])
+console.log(courses[1])
+console.log(courses[2])
+
+</script>
+
+<!-- Change elements from a pre-defined array
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+console.log(courses)
+courses[1]= "GeeksforGeeks"
+console.log(courses)
+
+ </script>
+
+<!-- Convert an Array to String:
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+console.log(courses.toString())
+
+ </script>
+
+ <!-- Increase and decrease the length of an array :
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+courses.length = 5 // Increasing array length to 5
+console.log("Array after increased length: " ,courses)
+courses.length = 2 // Decreasing array length to 2
+console.log("Array after decreased length: " ,courses)
+
+ </script>
+
+
+<!-- We can also update an array after initialization :
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+courses.length = 5 // Increasing array length to 5
+console.log("Array after increased length: " ,courses)
+
+courses[3] = 'PhP'
+courses[4] = 'React'
+console.log("Array after initializing: ", courses)
+
+ </script>
+
+ <!-- Loop through Javascript Array Elements :
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+for (let i = 0; i < courses.length; i++) {
+	console.log(courses[i])
+}
+
+
+const courses = ["HTML", "CSS", "Javascript"];
+courses.forEach(myfunc);
+function myfunc(elements) {
+	console.log(elements);
+}
+
+ </script>
+
+ <!-- Adding new elements to JavaScript Array :
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+console.log("Original Array: ",courses)
+courses.push("React")
+console.log("Array after adding an element: ",courses)
+
+ </script>
+
+ <!-- We can also add a new element to a Javascript array using the length property.
+
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+console.log("Original Array: ",courses)
+courses[courses.length] = "React"
+console.log("Array after adding an element: ",courses)
+
+ </script>
+
+ <!-- Example : In the given example, The Javascript typeof operator returns “object” for arrays.
+
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+console.log(typeof courses)
+
+ </script>
+
+ <!-- const courses = ["HTML", "CSS", "Javascript"];
+console.log(typeof courses)
+ -->
+
+ <script>
+    const courses = ["HTML", "CSS", "Javascript"];
+console.log("Using Array.isArray() method: ",Array.isArray(courses))
+console.log("Using instanceof method: ",courses instanceof Array)
+
+ </script>

@@ -1,0 +1,58 @@
+Best-Known JavaScript Array Methods
+An array is a special variable in all the languages that are used to store different elements. JavaScript array contains some built-in properties that every JavaScript developer should know how to use and when or where to use them. We can use them to add, remove, iterate, or manipulate data as per our requirements.
+
+1. Array some() Method:
+This method checks whether at least one of the elements of the array satisfies the condition checked by the argument function.
+
+2. Array reduce() Method:
+The array reduce() method in JavaScript is used to reduce the array to a single value and executes a provided function for each value of the array (from left to right) and the return value of the function is stored in an accumulator.
+
+
+3. Array map() Method:
+The map() method in JavaScript creates an array by calling a specific function on each element present in the parent array. It is a non-mutating method. Generally, the map() method is used to iterate over an array and call the function on every element of an array.
+
+
+4. Array every() Method:
+This method checks whether all the elements of the array satisfy the given condition or not that is provided by a function passed to it as the argument.
+
+
+5. Array flat() Method:
+This method creates a new array that contains more than arrays. Basically creates a simple array from an array that contains multiple arrays.
+
+6. Array flatMap() Method:
+This method is used to flatten the input array element into a new array. This method first of all map every element with the help of a mapping function, then flattens the input array element into a new array.
+
+
+7. Array filter() Method:
+This method is used to create a new array from a given array consisting of only those elements from the given array which satisfy a condition set by the argument function.
+
+
+8. Array findindex() Method:
+This method returns the index of the first element in a given array that satisfies the provided testing function. Otherwise, -1 is returned.
+
+9. Array find() Method:
+This method is used to get the value of the first element in the array that satisfies the provided condition. It checks all the elements of the array and whichever the first element satisfies the condition is going to print.
+
+
+10. Array fill() Method:
+This method is used to fill the array with a given static value. The value can be used to fill the entire array or it can be used to fill a part of the array.
+
+
+11. Array forEach() Method:
+This method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
+
+
+12. Array sort() Method:
+This method is used to sort the array. An array can be of any type i.e. string, numbers, characters, etc.
+
+
+13. Array concat() Method:
+This method is used to merge two or more arrays together. This function does not alter the original arrays passed as arguments.
+
+
+14. Array includes() Method:
+This method is used to know whether a particular element is present in the array or not and accordingly, it returns true or false i.e, if the element is present, then it returns true otherwise false
+
+
+15. Array reverse() Method:
+This method is used for in-place reversal of the array. The first element of the array becomes the last element and vice versa.

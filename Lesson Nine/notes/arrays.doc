@@ -1,0 +1,33 @@
+JavaScript Arrays
+JavaScript Array is a single variable that is used to store elements of different data types. JavaScript arrays are zero-indexed. Javascript Arrays are not associative in nature.
+
+Declaration of an Array
+There are basically two ways to declare an array.
+
+1. Creating an array using array literal:
+let arrayName = [value1, value2, ...];
+
+2. Creating an array using the JavaScript new keyword:
+let arrayName = new Array();
+
+Accessing Elements of an Array
+Any element in the array can be accessed using the index number. The index in the arrays starts with 0.
+
+Difference between Javascript arrays and objects
+Javascript arrays use indexes as numbers
+objects use indexes as names.
+When to use JavaScript Arrays and Objects?
+Arrays are used when we want element names to be numeric.
+Objects are used when we want element names to be strings.
+JavaScript new Array() :
+JavaScript has a built-in array constructor new Array().
+[] can also be used.
+These two different statements both create a new empty array named points:
+
+const points = new Array();
+const points = [];
+Recognizing a JavaScript Array
+There are two methods by which we can recognize a JavaScript array:
+
+By using Array.isArray() method
+By using instanceof method 

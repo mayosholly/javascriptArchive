@@ -1,0 +1,78 @@
+<!-- Example 1: In the below program we are accessing the object using “.” notation.
+
+ -->
+
+ <script>
+    let myOrder, i; 
+
+// Object is created with name myOrder 
+myOrder = { 
+	"name_of_the_product": "Earbuds", 
+	"cost": "799", 
+	"warranty": "1 year "
+}; 
+
+// Accessing for particular detail 
+// from object myOrder 
+i = myOrder.name_of_the_product; 
+
+// It prints the detail of name 
+// of the product 
+console.log(i);
+
+ </script>
+
+ <script>
+    let myOrder, i; 
+
+myOrder = { 
+	"name_of_product": "Earbuds", 
+	"cost": "799", 
+	"warranty": "1 year"
+}; 
+
+// Accessing object using [] notation 
+i = myOrder["name_of_product"]; 
+
+console.log(i);
+
+ </script>
+
+
+<script>
+    let myOrder, a; 
+
+myOrder = { 
+	"name of product": "earbuds", 
+	"cost": "799", 
+	"warranty": "1 year"
+}; 
+
+for (a in myOrder) { 
+
+	// Accessing loop object 
+	// using dot notation 
+	console.log(myOrder.a); 
+}
+
+</script>
+
+
+
+<script>
+    let myOrder, a; 
+
+myOrder = { 
+	"name_of_product": "earbuds", 
+	"cost": "799", 
+	"warranty": "1 year"
+}; 
+
+for (a in myOrder) { 
+
+	// Accessing object in looping 
+	// using bracket notation 
+	console.log(myOrder[a]); 
+}
+
+</script>

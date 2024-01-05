@@ -1,0 +1,35 @@
+JavaScript String
+JavaScript String Object is a sequence of characters. It contains zero or more characters within single or double quotes.
+
+Syntax:
+const string_name = "String Content"
+or
+const string_name = new String("String Content")
+
+
+Escape Characters
+We can use escape characters in string to add single quotes, dual quotes, and backslash.
+
+Syntax:
+\' - Inserts a single quote
+\" - Inserts a double quote 
+\\ - Inserts a backslash
+
+
+Finding the length of a String
+We can find the length of a string using the JavaScript built-in length property.
+
+
+Breaking Long Strings
+We will use a backslash to break a long string in multiple lines of code.
+
+
+Passing JavaScript String as Objects
+We can create a JavaScript string using the new keyword.
+
+
+
+String Comparison
+There are some inbuilt methods with that we can compare strings such as the equality operator and another like localeCompare() method.
+
+

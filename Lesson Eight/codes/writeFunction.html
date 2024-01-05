@@ -1,0 +1,82 @@
+<!-- Function Calling: -->
+<script type="text/javascript">
+	function welcome() {
+	console.log("welcome to GfG");
+	}
+	
+	// Function calling
+	welcome();
+</script>
+
+
+<!--Function Arguments:   -->
+<script type="text/javascript">
+	function welcome(name) {
+	console.log("Hey "+""+name+" "+"welcome to GfG");
+	}
+	
+	// Passing arguments
+	welcome("Rohan");
+</script>
+
+<!-- Return Value: -->
+<script type="text/javascript">
+	function welcome() {
+	
+	// Return statement
+	return "Welcome to GfG";
+	}
+	
+	console.log(welcome());
+</script>
+
+<!-- Function Expression: -->
+<script type="text/javascript">
+	let welcome = function(){
+	return "Welcome to GfG";
+	}
+	
+	let gfg = welcome();
+	
+	console.log(gfg);
+</script>
+
+<!-- Named function -->
+<script type="text/javascript">
+	function add(a, b){
+	return a+b ;
+	}
+	console.log(add(5, 4));
+</script>
+
+<!--  Anonymous function: -->
+
+<script type="text/javascript">
+	let add = function(a, b){
+	return a + b;
+	}
+	console.log(add(5, 4));
+</script>
+
+
+<!--  Nested Functions: -->
+<script type="text/javascript">
+	function msg(firstName) {
+	function hey() {
+		console.log("Hey " + firstName);
+	}
+	
+	return hey();
+	}
+	
+	msg("Ravi");
+</script>
+
+
+<!--  Immediately invoked function expression:  -->
+<script type="text/javascript">
+	let msg = (function() {
+	return "Welcome to GfG" ;
+	})();
+	console.log(msg);
+</script>

@@ -1,0 +1,51 @@
+Javascript Numbers are primitive data types. Unlike other programming languages, you don’t need int, float, etc to declare different numeric values. JavaScript numbers are always stored in double-precision 64-bit binary format IEEE 754. 
+
+This format stores numbers in 64 bits, 
+
+0-51 bit stores value(fraction)
+52-62 bit stores exponent
+63-bit stores sign
+Number Literals: The types of number literals You can use decimal, binary, octal, and hexadecimal.
+
+Decimal Numbers: JavaScript Numbers does not have different types of numbers(ex: int, float, long, short) which other programming languages do. It has only one type of number and it can hold both with or without decimal values.
+
+let a=33;
+let b=3.3;
+Octal Number: If the number starts with 0 and the following number is smaller than 8. It will be parsed as an Octal Number. 
+
+let x = 0562   // x will be 370(parsed as an octal number).
+Binary Numbers: They start with 0b or 0B followed by 0’s and 1’s. 
+
+let x = 0b11;        // x will be 3
+let x = 0B0111;    // x will be 7
+Hexadecimal Numbers: They start with 0x or 0X followed by any digit belonging (0123456789ABCDEF) 
+
+let x = 0xfff;   // x will be 4095
+Number Coercion: The built-in operations of Javascript that expect numbers coerce their arguments to numbers first. Some popular coercion is given below:
+
+undefined is returned as NaN
+null is returned as0
+true as 1 and false as 0
+Strings are returned by parsing them as if they contain an object literal. If the string is not parsed it returns NaN.
+BignInts and symbol throw typeError
+Integer conversion: Some operations such as those which work with an array, string indexes, or date/time expect integers. After performing the coercion if the number is greater than 0 it is returned as the same and if the number NaN or -0, it is returned as 0. The result is always an integer.
+
+Fixed-width number Conversion: In Javascript, there are some functions that deal with the binary encoding of integers such as bitwise operators and typedArray objects. The bitwise operators always convert the operands to 32-bit integers.
+
+
+Integers are accurate up to 15 digits
+
+let a = 999999999999999;      // a will be 999999999999999
+let b = 9999999999999999;    // b will be 10000000000000000
+The floating point is not 100% accurate. The maximum number of decimals is up to 17.
+
+let x = 0.22 + 0.12;   //x will be 0.33999999999999997
+
+
+Some facts about numbers in JavaScript:
+
+If you add a string and number, there will be a string concatenation as an output.
+Javascript numbers which are primarily primitive values can also be defined as objects using a new keyword.
+Constants preceded by 0x are interpreted as hexadecimal in javascript.   
+Javascript numbers are of base 10 by default, but we can use the toString() method to get output in the required base from base 2 to base 36.
+Apart from regular numbers, Javascript has BigInt numbers which are integers of arbitrary length. Regular integer numbers can’t safely exceed (253-1) or be less than -(253-1) that’s when BigInt serves the purpose.

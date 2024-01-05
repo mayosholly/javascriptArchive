@@ -1,0 +1,112 @@
+<!-- Example 1: In this example, we will create a string by using the native way and using String Constructor.
+
+ -->
+
+ <script>
+    // Create a variable and assign String value
+const str1 = "First String Content";
+console.log("String 1: " + str1);
+
+// Creating a String using String() Constructor
+const str2 = String("Second String Content");
+console.log("String 2: " + str2);
+
+ </script>
+
+ <!-- Example 2: We can write a string in both single and double quotes.
+
+ -->
+
+ <script>
+
+    // String using dual quotes
+const str1 = "GeeksforGeeks";
+
+// String using single quotes
+const str2 = 'GfG';
+
+// Display the string
+console.log(str1);
+console.log(str2);
+
+ </script>
+
+
+<!-- Example 3: We can also use single quotes inside double quotes and vice-versa.
+
+ -->
+
+ <script>
+    const str1 = "'GeeksforGeeks' is learning portal";
+const str2 = '"GfG" is a learning portal';
+
+console.log(str1);
+console.log(str2);
+
+ </script>
+
+ <!-- Example: In this example we are using escape characters
+
+ -->
+
+ <script>
+    const str1 = "\'GfG\' is a learning portal"
+const str2 = "\"GfG\" is a learning portal"
+const str3 = "\\GfG\\ is a learning portal"
+
+console.log(str1)
+console.log(str2)
+console.log(str3)
+
+ </script>
+
+ <!-- Example: In this example, we are finding the length of a string
+
+ -->
+ <script>
+    // Declare a string
+const str = "GeeksforGeeks";
+
+// Display the length of String
+console.log("String Length: " + str.length);
+
+ </script>
+
+ <!-- Example: below is the better way to break a string is by using the string addition.
+
+ -->
+ <script>
+    const str = "'GeeksforGeeks' is a"
+	+ " learning portal";
+
+console.log(str)
+
+ </script>
+
+ <!-- Example: here we are using new keyword.
+
+ -->
+
+ <script>
+    const str = new String("GeeksforGeeks");
+
+console.log(str);
+
+ </script>
+
+ <!-- Example: In this example, we will use the above methods to compare strings.
+
+ -->
+ <script>
+    function compareString() {
+	let str1 = "John";
+	let str2 = new String("John");
+
+	console.log(str1 == str2);
+	console.log(str1.localeCompare(str2));
+	
+}
+
+compareString();
+
+ </script>

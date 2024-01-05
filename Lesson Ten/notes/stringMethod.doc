@@ -1,0 +1,77 @@
+JavaScript String Methods
+JavaScript strings are the sequence of characters. In JavaScript, strings automatically convert the string to objects so that we can use string methods and properties also for primitive strings. It is used to represent and manipulate the sequence of characters.
+
+In general, there are two ways to create a string in JavaScript. Either by using the new String() syntax or putting the value in quotes.
+
+JavaScript String Methods and Property
+String methods and properties are important to perform any operation on the given string, String indexes start from 0. The first character is in position 0 and the second in 1 and the same follows. We can call any of the pre-defined methods of JavaScript as it automatically converts from string primitive to objects.
+
+
+Property:
+JavaScript String length Property
+This property returns the number of characters present in the string. In the case of an array, this property returns the number of elements present in the array.
+
+
+Method 1: JavaScript slice(startIndex, endIndex) Method
+This method extracts a part of the string based on the given stating-index and ending-index and returns a new string.
+
+Method 2: JavaScript substring(startIndex, endIndex) Method
+This method returns the part of the given string from the start index to the end index. Indexing starts from zero (0).
+
+
+Method 3: JavaScript substr(start, length) Method
+This method returns the specified number of characters from the specified index from the given string. It basically extracts a part of the original string.
+
+
+Method 4: JavaScript replace(replaceValue, replaceWithValue)
+This method replaces a part of the given string with another string or a regular expression. The original string will remain unchanged.
+
+
+Method 5: JavaScript replaceAll(regexp | substr , newSubstr | function)
+This method returns a new string after replacing all the matches of a string with a specified string or a regular expression. The original string is left unchanged after this operation.
+
+
+Method 6: JavaScript toUpperCase(stringVariable)
+This method converts all the characters present in the String to upper case and returns a new String with all characters in upper case. This method accepts single parameter stringVariable string that you want to convert in upper case.
+
+
+Method 7: JavaScript toLowerCase(stringVariable)
+This method converts all the characters present in the so lowercase and returns a new string with all the characters in lowercase.
+
+
+Method 8: JavaScript concat(objectOfString) Method
+This method combines the text of two strings and returns a new combined or joined string. To concatenate two strings, we use the concat() method on one object of string and send another object of string as a parameter. This method accepts one argument. The variable contains text in double quotes or single quotes.
+
+
+Method 9: JavaScript trim() Method
+This method is used to remove either white spaces from the given string. This method returns a new string with removed white spaces. This method is called on a String object. This method doesn’t accept any parameter.
+
+
+Method 10: JavaScript trimStart() Method
+This method removes whitespace from the beginning of a string. The value of the string is not modified in any manner, including any whitespace present after the string.
+
+
+Method 11: JavaScript trimEnd() Method
+This method removes white space from the end of a string. The value of the string is not modified in any manner, including any white-space present before the string.
+
+
+
+Method 12: JavaScript padStart() Method
+This method pad a string with another string until it reaches the given length. The padding is applied from the left end of the string.
+
+
+
+Method 13: JavaScript padEnd() Method
+This method pad a string with another string until it reaches the given length. The padding is applied from the right end of the string.
+
+
+Method 14: JavaScript charAt(indexOfCharacter) Method
+This method returns the character at the specified index. String in JavaScript has zero-based indexing.
+
+
+Method 15: JavaScript charCodeAt(indexOfCharacter) Method
+This method returns a number that represents the Unicode value of the character at the specified index. This method accepts one argument.
+
+
+Method 16: JavaScript split(character) Method
+This method splits the string into an array of sub-strings. This method returns an array. This method accepts a single parameter character on which you want to split the string.

@@ -1,0 +1,53 @@
+<!-- Example of Function Declaration: In this example, we will create a function named Person and perform some tasks as shown below. 
+
+ -->
+ <script>
+    function Person() {
+	name = "Vikash";
+	age = "22";
+}
+
+ </script>
+
+
+<!-- Example of Function Expression: This example shows the function expression
+
+ -->
+
+ <script>
+    // Function declaration
+function person() { }
+let person = person()
+
+// Printing the return value
+// of the person() function
+console.log(person)
+
+function person1(name) {
+	return name;
+}
+
+let person1 = person1("Aayush")
+
+// Printing the value of person1
+console.log(person1)
+
+ </script>
+
+<!-- Example: This example shows the use of a function constructor in Javascript.
+
+ -->
+<script>
+    // Creating the function
+function Person(name, age) {
+	this.name = name;
+	this.age = age;
+}
+
+// Calling the function 
+let person = new Person("Vikah", 22);
+
+console.log(person.name);
+console.log(person.age);
+
+</script>

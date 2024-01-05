@@ -1,0 +1,133 @@
+Sets in JavaScript
+In this article, we will be discussing the Set object provided by ES6. A set is a collection of items that are unique i.e. no element can be repeated. Set in ES6 are ordered: elements of the set can be iterated in the insertion order. The set can store any type of value whether primitive or objects.
+
+Syntax: 
+new Set([it]);
+Parameter: 
+it: It is an iterable object whose all elements are added to the new set created, If the parameter is not specified or null is passed then a new set created is empty.
+Return Value:
+A new set object.
+
+Properties: 
+Set.size – It returns the number of elements in the Set.
+
+Methods of Set: 
+Set.add()
+It adds the new element with a specified value at the end of the Set object.
+
+Syntax: 
+set1.add(val);
+Parameter:
+val: It is a value to be added to the set.
+Return value:
+The set object
+
+Set.delete()
+It deletes an element with the specified value from the Set object. 
+
+Syntax: 
+set1.delete(val);
+Parameter:
+val: It is a value to be deleted from the set.
+Return value:
+true if the value is successfully deleted from the set else returns false.
+
+
+Set.clear()
+It removes all the element from the set. 
+
+
+Syntax: 
+set1.clear();
+Parameter:
+This method does not take any parameter
+
+Return value:
+Undefined
+
+
+Set.entries()
+It returns an iterator object which contains an array having the entries of the set, in the insertion order. 
+
+Syntax:
+set1.entries();
+Parameter:
+This method does not take any parameter
+
+Return value:
+It returns an iterator object that contains an array of [value, value] for every element of the set, in the insertion order.
+
+
+Set.has()
+It returns true if the specified value is present in the Set object. 
+
+Syntax:  
+set1.has(val);
+Parameter: 
+val: The value to be searched in the Set
+Return value:
+True if the value is present else it returns false.
+
+Set.values()
+It returns all the values from the Set in the same insertion order. 
+
+Syntax:  
+set1.values();
+Parameter:
+This method does not take any parameter
+
+Return value:
+An iterator object that contains all the values of the set in the same order as they are inserted.
+
+Set.keys()
+It also returns all the values from the Set in the insertion order. 
+
+Note: It is similar to the values() in the case of Sets 
+
+Syntax: 
+set1.keys();
+Parameter:
+This method does not take any parameter
+
+Return Value:
+An iterator object that contains all the values of the set in the same order as they are inserted. 
+
+
+Set.forEach()
+It executes the given function once for every element in the Set, in the insertion order. 
+
+Syntax:  
+set1.forEach(callback[,thisargument]);
+Parameter:
+callback – It is a function that is to be executed for each element of the Set.
+The callback function is provided with three parameters as follows: 
+the element key
+the element value
+the Set object to be traversed
+thisargument – Value to be used as this when executing the callback.
+Return value:
+Undefined
+
+Set.prototype[@@iterator]()
+It returns a Set iterator function which is values() function by default. 
+
+Syntax: 
+set1[Symbol.iterator]();
+Parameter:
+This method does not take any parameter
+
+Return value:  
+A Set iterator function and it is values() by default.
+
+
+Set Operations
+JavaScript subSet() Method: It returns true if Set A is a subset of Set B.  A Set A is said to be a subset of Set B, if all the elements of Set A is also present in Set B. Now lets implement and use the subset function. 
+
+
+JavaScript union() Method: It returns a Set which consists of the union of Set A and Set B. A Set is said to be a union of two sets, if it contains all elements of Set A as well as all elements of Set B, but it doesn’t contain duplicate elements. 
+
+If an element is present in both Set A and Set B then the union of Set A and B will contain a single copy of the element. Let’s implement and use the union function 
+
+JavaScript intersection() Method: It returns the intersection of Set A and Set B. A Set is said to be the intersection of Set A and B if contains an element which is present both in Set A and Set B. Let’s implement and use the intersection function 
+
+JavaScript difference() Method: It returns the Set which contains the difference between Set A and Set B. A Set is said to be a difference between Set A and B if it contains set of elements e which are present in Set A but not in Set B. Let’s implement and use the difference function 

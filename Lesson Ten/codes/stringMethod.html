@@ -1,0 +1,219 @@
+<!-- Example: This example, creates a string in JavaScript using the methods described above. -->
+
+<script>
+    let str1 = "Welcome to GeesforGeeks";
+let str2 = new String("Welcome Geeks");
+
+console.log(str1);
+console.log(str2);
+
+</script>
+
+<!-- Example: This example describes the JavaScript String Length property.
+
+ -->
+
+ <script>
+    // JavaScript to illustrate length property 
+function func() {
+	// length property for string
+	console.log("GFG".length)
+}
+func();
+
+ </script>
+
+ <!-- Example: This example describes the JavaScript String slice() method.
+ -->
+ <script>
+    let A = 'Geeks for Geeks';
+b = A.slice(0,5);
+c = A.slice(6,9);
+d = A.slice(10);
+
+console.log(b);
+console.log(c);
+console.log(d);
+
+ </script>
+
+ <!-- Method 2: JavaScript substring(startIndex, endIndex) Method
+ -->
+ <script>
+    let str = "Mind, Power, Soul";
+let part = str.substring(6, 11);
+console.log(part);
+
+ </script>
+
+ <!-- Method 3: JavaScript substr(start, length) Method
+ -->
+ <script>
+    let str = "Mind, Power, Soul";
+let part = str.substr(6, 5);
+console.log(part);
+
+ </script>
+
+ <!-- Method 4: JavaScript replace(replaceValue, replaceWithValue)
+ -->
+ <script>
+    let str = "Mind, Power, Soul";
+let part = str.replace("Power", "Space");
+console.log(part);
+
+ </script>
+
+
+<!-- Method 5: JavaScript replaceAll(regexp | substr , newSubstr | function)
+ -->
+ <script>
+    let str = "Mind, Power, Power, Soul";
+let part = str.replaceAll("Power", "Space");
+console.log(part);
+
+ </script>
+
+ <!-- Method 6: JavaScript toUpperCase(stringVariable)
+ -->
+
+ <script>
+    let gfg = 'GFG '
+let geeks = 'stands-for-GeeksforGeeks';
+
+console.log(geeks.toUpperCase(geeks)) ;
+
+ </script>
+
+ <!-- Method 7: JavaScript toLowerCase(stringVariable)
+ -->
+ <script>
+    let gfg = 'GFG ';
+let geeks = 'stands-for-GeeksforGeeks';
+
+console.log(geeks.toLowerCase(geeks));
+
+ </script>
+
+
+<!-- Method 8: JavaScript concat(objectOfString) Method
+ -->
+ <script>
+    let gfg = 'GFG ';
+let geeks = 'stands for GeeksforGeeks';
+
+// Accessing concat method on an object
+// of String passing another object 
+// as a parameter
+console.log(gfg.concat(geeks));
+
+ </script>
+
+
+ <!-- Method 9: JavaScript trim() Method
+ -->
+ <script>
+    let gfg = 'GFG ';
+let geeks = 'stands-for-GeeksforGeeks';
+
+// Storing new object of string
+// with removed white spaces
+let newGfg = gfg.trim();
+
+// Old length
+console.log(gfg.length);
+
+// New length
+console.log(newGfg.length)
+
+ </script>
+
+ <!-- Method 10: JavaScript trimStart() Method
+ -->
+ <script>
+    let str = " Soul";
+console.log(str)
+let part = str.trimStart();
+console.log(part);
+
+ </script>
+
+
+<!-- Method 11: JavaScript trimEnd() Method
+ -->
+ <script>
+    let str = "Soul ";
+console.log(str)
+let part = str.trimEnd();
+console.log(part);
+
+ </script>
+
+ <!-- Method 12: JavaScript padStart() Method
+ -->
+ <script>
+    let stone = "Soul";
+stone = stone.padStart(9,"Mind ");
+console.log(stone);
+
+ </script>
+
+ <!-- Method 13: JavaScript padEnd() Method
+ -->
+
+ <script>
+    let stone = "Soul";
+stone = stone.padEnd(10," Power");
+console.log(stone);
+
+ </script>
+
+ <!-- Method 14: JavaScript charAt(indexOfCharacter) Method
+ -->
+ <script>
+    let gfg = 'GeeksforGeeks';
+let geeks = 'GfG is the best platform to learn and\n'+
+'experience Computer Science.';
+
+// Print the string as it is
+console.log(gfg); 
+
+console.log(geeks); 
+
+// As string index starts from zero
+// It will return first character of string
+console.log(gfg.charAt(0)); 
+
+console.log(geeks.charAt(5));
+
+ </script>
+
+
+
+ <!-- Method 15: JavaScript charCodeAt(indexOfCharacter) Method
+ -->
+ <script>
+    let gfg = 'GeeksforGeeks';
+let geeks = 'GfG is the best platform\n\
+to learn and experience\n\
+Computer Science.';
+
+// Return a number indicating Unicode
+// value of character at index 0 ('G')
+console.log(gfg.charCodeAt(0));
+console.log(geeks.charCodeAt(5));
+
+ </script>
+
+
+
+ <!-- Method 16: JavaScript split(character) Method
+ -->
+ <script>
+    let gfg = 'GFG '
+let geeks = 'stands-for-GeeksforGeeks'
+
+// Split string on '-'. 
+console.log(geeks.split('-'))
+
+ </script>

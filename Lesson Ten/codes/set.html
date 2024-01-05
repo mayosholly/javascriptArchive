@@ -1,0 +1,318 @@
+<!-- Example: This example shows the implementation of a JavaScript set.
+
+ -->
+
+ <script>
+    // ["sumit","amit","anil","anish"]
+let set1 = new Set(["sumit","sumit","amit","anil","anish"]);
+
+// it contains 'f', 'o', 'd'
+let set2 = new Set("fooooooood");
+
+// it contains [10, 20, 30, 40]
+let set3 = new Set([10, 20, 30, 30, 40, 40]);
+
+// it is an empty set
+let set4 = new Set();
+
+ </script>
+
+ <!--  Example: In this example, we are adding values into the set by using add() method.
+
+-->
+
+<script>
+    let set1 = new Set();
+
+set1.add(10);
+set1.add(20);
+
+// As this method returns
+// the set object hence chaining 
+// of add method can be done.
+set1.add(30).add(40).add(50);
+
+console.log(set1);
+
+</script>
+
+<!-- Example: In this example, we are deleting the values into the set by using delete() method.
+
+ -->
+ <script>
+    let set1 = new Set("foooodiiiieee");
+
+// deleting e from the set
+// it prints true
+console.log(set1.delete('e'));
+
+console.log(set1);
+
+// deleting an element which is 
+// not in the set
+// prints false
+console.log(set1.delete('g'));
+
+ </script>
+
+ <!--Example: In this example, we are clearing the values into the set by using clear() method.
+
+  -->
+
+  <script>
+    let set2 = new Set([10, 20, 30, 40, 50]);
+
+console.log(set2);
+
+set2.clear()
+
+console.log(set2);
+
+  </script>
+
+  <!-- Example: In this example, we are using enteries() method.
+
+ -->
+
+ <script>
+    let set1 = new Set();
+
+set1.add(50);
+set1.add(30);
+set1.add(40);
+set1.add(20);
+set1.add(10);
+
+// using entries to get iterator
+let getEntriesArry = set1.entries();
+
+// each iterator is array of [value, value]
+console.log(getEntriesArry.next().value);
+
+console.log(getEntriesArry.next().value);
+
+console.log(getEntriesArry.next().value);
+
+ </script>
+
+ <!-- Example: In this example, we are checking whether the value is present in the set by using has() method.
+
+ -->
+
+ <script>
+    let set1 = new Set();
+
+// adding element to the set
+set1.add(50);
+set1.add(30);
+			
+console.log(set1.has(50));
+
+console.log(set1.has(10));
+
+ </script>
+
+
+<!-- Example: In this example, we are printing all the values of the set by using keys() method.
+
+ -->
+
+ <script>
+    let set1 = new Set();
+
+// adding element to the set
+set1.add(50);
+set1.add(30);
+set1.add(40);
+set1.add("Geeks");
+set1.add("GFG");
+
+// getting all the values
+let getValues = set1.values();
+
+console.log(getValues);
+
+let getKeys = set1.keys();
+
+console.log(getKeys);
+
+ </script>
+
+ <!-- Example: In this example, we are iterating the values from the set.
+
+ -->
+
+ <script>
+    let set1 = new Set(["sumit","sumit","amit","anish"]);
+
+let getit = set1[Symbol.iterator]();
+
+console.log(getit.next());
+
+console.log(getit.next());
+
+console.log(getit.next());
+
+console.log(getit.next());
+
+ </script>
+
+ <!-- Example: In this example, we are checking whether the given subset is present in the given set or not and returning the result according to it.
+
+ -->
+ <script>
+    Set.prototype.subSet = function(otherSet)
+{
+	// if size of this set is greater
+	// than otherSet then it can't be 
+	// a subset
+	if(this.size > otherSet.size)
+		return false;
+	else
+	{
+		for(let elem of this)
+		{
+			// if any of the element of 
+			// this is not present in the
+			// otherset then return false
+			if(!otherSet.has(elem))
+				return false;
+		}
+		return true;
+	}
+}
+
+// using the subSet function
+
+// Declaring different sets
+let setA = new Set([10, 20, 30]);
+let setB = new Set([50, 60, 10, 20, 30, 40]);
+let setC = new Set([10, 30, 40, 50]);
+
+// prints true
+console.log(setA.subSet(setB));
+
+// prints false
+console.log(setA.subSet(setC));
+
+// prints true
+console.log(setC.subSet(setB));
+
+ </script>
+
+
+<!-- Example: In this example, we are merging the two sets.
+
+ -->
+
+
+ <script>
+    Set.prototype.union = function(otherSet)
+{
+	// creating new set to store union
+	let unionSet = new Set();
+
+	// iterate over the values and add 
+	// it to unionSet
+	for (let elem of this)
+	{
+		unionSet.add(elem);
+	}
+
+	// iterate over the values and add it to 
+	// the unionSet
+	for(let elem of otherSet)
+		unionSet.add(elem);
+
+	// return the values of unionSet
+	return unionSet;
+}
+
+// using the union function
+// Declaring values for set1 and set2
+let set1 = new Set([10, 20, 30, 40, 50]);
+let set2 = new Set([40, 50, 60, 70, 80]); 
+
+// performing union operation
+// and storing the resultant set in 
+// unionSet
+let unionSet = set1.union(set2);
+
+console.log(unionSet.values());
+
+ </script>
+
+
+<!-- Example: In this example, we are finding the insersection of two sets.
+
+ -->
+
+ <script>
+    Set.prototype.intersection = function(otherSet)
+{
+	// creating new set to store intersection
+	let intersectionSet = new Set();
+
+	// Iterate over the values 
+	for(let elem of otherSet)
+	{
+		// if the other set contains a 
+		// similar value as of value[i]
+		// then add it to intersectionSet
+		if(this.has(elem))
+			intersectionSet.add(elem);
+	}
+
+// return values of intersectionSet
+return intersectionSet;			 
+}
+// using intersection function
+// Declaring values for set1 and set2
+let set1 = new Set([10, 20, 30, 40, 50]);
+let set2 = new Set([40, 50, 60, 70, 80]); 
+
+// performing union operation
+// and storing the resultant set in 
+// intersectionset
+let intersectionSet = set1.intersection(set2);
+
+console.log(intersectionSet.values());
+
+ </script>
+
+ <!-- Example: In this example, we are finding the difference of two sets. 
+
+ -->
+
+ <script>
+    Set.prototype.difference = function(otherSet)
+{
+	// creating new set to store difference
+	let differenceSet = new Set();
+
+	// iterate over the values
+	for(let elem of this)
+	{
+		// if the value[i] is not present 
+		// in otherSet add to the differenceSet
+		if(!otherSet.has(elem))
+			differenceSet.add(elem);
+	}
+
+	// returns values of differenceSet
+	return differenceSet;
+}
+
+// using difference function
+// Declaring values for set1 and set2
+let set1 = new Set([10, 20, 30, 40, 50]);
+let set2 = new Set([40, 50, 60, 70, 80]); 
+
+// performing union operation
+// and storing the resultant set in 
+// intersectionset
+let differenceSet = set1.difference(set2);
+
+console.log(differenceSet);
+
+ </script>

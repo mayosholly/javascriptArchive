@@ -1,0 +1,85 @@
+<!-- Example 1: A basic javascript function, here we create a function that divides the 1st element by the second element.
+
+ -->
+ <script>
+    function myFunction(g1, g2) {
+	return g1 / g2;
+}
+const value = myFunction(8, 2); // Calling the function
+console.log(value);
+
+ </script>
+
+ <!-- Example 2: This example shows a basic declaration of a function in javascript.
+
+ -->
+ <script>
+    function calcAddition(number1, number2) { 
+	return number1 + number2; 
+}
+console.log(calcAddition(6,9));
+
+ </script>
+
+
+<!-- Example 3: This example explains the usage of the Function expression.
+
+ -->
+
+ <script>
+    const square = function (number) {
+	return number * number;
+};
+const x = square(4); // x gets the value 16
+console.log(x);
+
+ </script>
+
+ <!-- Example 4: This example describes the usage of the Arrow function.
+
+ -->
+
+ <script>
+    const a = ["Hydrogen", "Helium", "Lithium", "Beryllium"];
+
+const a2 = a.map(function (s) {
+	return s.length;
+});
+
+console.log("Normal way ", a2); // [8, 6, 7, 9]
+
+const a3 = a.map((s) => s.length);
+
+console.log("Using Arrow Function ", a3); // [8, 6, 7, 9]
+
+ </script>
+
+ <!-- Example 4: In this example, we pass the argument to the function.
+
+ -->
+ <script>
+    function multiply(a, b) {
+	b = typeof b !== "undefined" ? b : 1;
+	return a * b;
+}
+
+console.log(multiply(69)); // 69
+
+ </script>
+
+ <!-- Example 5: Below is a sample program that illustrates the working of functions in JavaScript: 
+
+ -->
+ <script>
+    function welcomeMsg(name) {
+	return ("Hello " + name + " welcome to GeeksforGeeks");
+
+}
+
+// creating a variable
+let nameVal = "Admin";
+
+// calling the function
+console.log(welcomeMsg(nameVal));
+
+ </script>

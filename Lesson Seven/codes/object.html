@@ -1,0 +1,184 @@
+<!-- Example: Below is an example of Objects in JavaScript.
+
+ -->
+
+ <script>
+    const o = new Object();
+o.foo = 42;
+
+console.log(o);
+// { foo: 42 }
+
+
+// Example: In this example “name”, “location”, and “established” are all “keys” and “Vivekananda School”, “Delhi” and 1971 are values of these keys respectively. Each of these keys is referred to as properties of the object. An object in JavaScript may also have a function as a member, in which case it will be known as a method of that object. Here  “displayinfo” is a method of the school object that is being used to work with the object’s data, stored in its properties.
+
+// JavaScript code demonstrating a simple object
+let school = {
+	name: 'Vivekananda School',
+	location: 'Delhi',
+	established: '1971',
+	displayInfo: function () {
+		console.log(`${school.name} was established 
+			in ${school.established} at ${school.location}`);
+	}
+}
+school.displayInfo(); 
+
+ </script>
+
+<!-- Example: Below is the example of object properties. -->
+
+<script>
+    let school = {
+	name: 'Vivekananda School',
+	location: 'Delhi',
+	established: '1971',
+	20: 1000,
+	displayInfo: function () {
+		console.log(`The value of the key 20 is ${school['20']}`);
+	}
+}
+school.displayInfo(); 
+
+</script>
+
+<!-- Example: In this example, we are accessing ‘Vivekananda’ from ‘Vivekananda School’.
+
+ -->
+
+ <script>
+    // Bracket notation 
+let school = {
+	name: 'Vivekananda School',
+	displayInfo: function () {
+		console.log(`${school.name.split(' ')[0]}`);
+	}
+}
+school.displayInfo(); // Vivekananda
+
+ </script>
+
+ <!-- Example: Below is the example of inherited properties.
+
+ -->
+
+ <script>
+    // hasOwnProperty code in js
+const object1 = new Object();
+object1.property1 = 42;
+
+console.log(object1.hasOwnProperty('property1')); // true
+
+ </script>
+
+
+<!-- Example: Below is the example of accessing object members.
+
+ -->
+
+ <script>
+    let school = { 
+	name : "Vivekanada", 
+	location : "Delhi", 
+	established : 1971,
+	20 : 1000, 
+	displayinfo : function() { 
+		console.log(`${school.name} was established 
+		in ${school.established} at ${school.location}`); 
+	} 
+
+} 
+console.log(school.name); 
+
+console.log(school.established);
+
+ </script>
+
+
+<!-- Example: Below is the example of Bracket Notation.
+
+ -->
+
+ <script>
+    let school = {
+	name: "Vivekanada School",
+	location: "Delhi",
+	established: 1995,
+	20: 1000,
+	displayinfo: function () {
+		document.write(`${school.name} was established 
+		in ${school.established} at ${school.location}`);
+	}
+}
+
+// Output : Vivekanada School 
+console.log(school['name']);
+
+// Output: 1000 
+console.log(school['20']); 
+
+ </script>
+
+ <!-- Iterating over all keys of an object
+ -->
+
+ <script>
+    let person = {
+	gender: "male"
+}
+
+let person1 = Object.create(person);
+person1.name = "Adam";
+person1.age = 45;
+person1.nationality = "Australian";
+
+for (let key in person1) {
+	// Output : name, age, nationality 
+	// and gender
+	console.log(key);
+}		 
+
+ </script>
+
+ <!-- Example: Below is the example of deleting properties.
+
+ -->
+ <script>
+    let obj1 = { 
+	propfirst : "Name"
+} 
+
+// Output : Name 
+console.log(obj1.propfirst); 
+delete obj1.propfirst 
+
+// Output : undefined 
+console.log(obj1.propfirst);			 
+
+ </script>
+
+ <!-- Example: In this example, we can not delete inherited properties or non-configurable properties
+
+ -->
+
+ <script>
+    let obj1 = { 
+	propfirst : "Name"
+} 
+// Output : Name 
+console.log(obj1.propfirst) 
+let obj2 = Object.create(obj1); 
+
+// Output : Name 
+console.log(obj2.propfirst); 
+	
+// Output : true. 
+console.log(delete obj2.propfirst); 
+
+	// Surprisingly Note that this will return true 
+	// regardless of whether the deletion was successful 
+
+	// Output : Name	 
+	console.log(obj2.propfirst); 
+
+ </script>

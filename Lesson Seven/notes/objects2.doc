@@ -1,0 +1,17 @@
+Creating objects in JavaScript (4 Different Ways)
+JavaScript is a flexible object-oriented language when it comes to syntax. In this article, we will see the different ways to instantiate objects in JavaScript. Before we proceed it is important to note that JavaScript is an object-based language based on prototypes, rather than being class-based. Because of this different basis, it can be less apparent how JavaScript allows you to create hierarchies of objects and to have an inheritance of properties and their values.
+
+These are the following 4 ways:
+Creating object with a constructor
+One of the easiest ways to instantiate an object is in JavaScript. Constructor is nothing but a function and with the help of a new keyword, the constructor function allows to creation of multiple objects of the same flavor as shown below: 
+
+
+Using object literals
+Literals are smaller and simpler ways to define objects. We simply define the property and values inside curly braces as shown below.
+
+Creating object with Object.create() method
+The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.
+
+
+Using es6 classes
+ES6 supports class concept like any other Statically typed or object oriented language. So, object can be created out of a class in javascript as well.

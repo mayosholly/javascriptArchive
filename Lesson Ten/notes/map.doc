@@ -1,0 +1,52 @@
+JavaScript Map
+JavaScript map is a collection of elements where each element is stored as a Key, value pair. Map objects can hold both objects and primitive values as either key or value. When we iterate over the map object returns the key, and value pair in the same order as inserted. Map() constructor is used to create Map in JavaScript.
+
+JavaScript Map has a property that represents the size of the map.
+
+Example:
+
+Input:
+let map1 = new Map([
+    [1 , 10], [2 , 20] ,
+    [3, 30],[4, 40]
+    ]);
+     
+console.log("Map1: ");
+console.log(map1);
+Output:
+// Map1: 
+// Map(4) { 1 => 10, 2 => 20, 3 => 30, 4 => 40 }
+Steps to Create a Map
+Passing an Array to new Map()
+Create a Map and use Map.set()
+new Map()
+In this we use new Map() constructor,
+
+Example: In this example, a Map named prices is created to associate product names with their respective prices, allowing for efficient retrieval and management of price information.
+
+// Creating a Map for product prices
+const prices = new Map([   
+   ["Laptop", 1000],
+   ["Smartphone", 800],
+   ["Tablet", 400] 
+]);
+Map.set():
+You can add elements to a Map with the set() method.
+
+Example: In this example, the Map.set() method is employed to add product prices to the Map named prices.
+
+// Creating a Map for product prices
+           const prices = new Map();  
+// Using Map.set() to add product prices 
+           prices.set('Laptop', 1000); 
+           prices.set('Smartphone', 800); 
+// The Map now contains { 'Laptop' => 1000, 'Smartphone' => 800 }
+
+Advantages of Map:
+Map object provided by ES6. A key of a Map may occur once, which will be unique in the map’s collection. There are slight advantages to using a map rather than an object.
+
+Accidental Keys & Security: No default keys are stored, only contain what’s explicitly put into them. Because of that, it’s safe to use.
+Key Types & Order: It can be any value as a key function, object anything. And the order is straightforward way in the order of entry insertion.
+Size: Because of the size property a map can be easily retrieved.
+Performance: Any operation can be performed on math so easily in a better way.
+Serialization and parsing: We can create our own serialization and parsing support for Map by using JSON.stringify() and JSON.parse() methods.

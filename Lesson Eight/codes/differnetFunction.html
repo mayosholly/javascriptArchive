@@ -1,0 +1,58 @@
+<!-- Example: Below is an example that illustrates the use of Function Declaration.
+
+ -->
+
+ <script>
+    // Function declaration 
+function add(a, b) {		 
+	console.log(a + b);
+}
+
+// Calling a function
+add(2, 3);
+
+ </script>
+
+
+
+<!-- Example: Below is an example that illustrates the use of Function Expression.
+
+ -->
+ <script>
+    // Function Expression
+const add = function (a, b) {
+	console.log(a + b);
+}
+
+// Calling function
+add(2, 3);
+
+ </script>
+
+
+<!-- Example: Below is the example that illustrates the use of the Arrow Function.
+
+ -->
+ <script>
+    // Single line of code
+let add = (a, b) => a + b;
+console.log(add(3, 2));
+
+ </script>
+
+
+<!-- Example: This is an example with multiple lines of code in arrow function
+
+  -->
+
+  <script>
+    // Multiple line of code
+const great = (a, b) => {
+	if (a > b)
+		return "a is greater";
+	else
+		return "b is greater";
+}
+console.log(great(3, 5));
+
+  </script>

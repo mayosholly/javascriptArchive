@@ -1,0 +1,30 @@
+<!-- Example: Below is the function to add two numbers.
+
+ -->
+
+ <script>
+    function func(a, b) {
+	let sum = a + b;
+	return sum;
+}
+console.log(func(1, 2));
+
+ </script>
+
+ <!-- Example: The following example shows the method that is invoked with an object called employee.
+
+ -->
+
+ <script>
+    let employee = {
+	empname: "Rahul",
+	department: "sales",
+	details: function () {
+		return this.empname +
+			" works with Department " +
+			this.department;
+	}
+};
+console.log(employee.details());
+
+ </script>

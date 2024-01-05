@@ -1,0 +1,7 @@
+Function Call
+The Javascript Function call is a predefined javascript method, that is used to write methods for different objects. It calls the method, taking the owner object as an argument. The keyword this refers to the “owner” of the function or the object it belongs to. All the functions in javascript are considered object methods. So we can bind a function to a particular object by using ‘call()’. A function will be the global object if the function is not considered a method of a JavaScript object.
+
+Syntax:
+
+call()
+Return Value: It calls and returns a method with the owner object being the argument.

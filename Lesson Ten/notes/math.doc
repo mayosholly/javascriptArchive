@@ -1,0 +1,4 @@
+JavaScript Math Object
+Javascript Math object is used to perform mathematical operations on numbers. All the properties of Math are static and unlike other objects, it does not have a constructor.
+
+We use Math only on Number data type and not on BigInt
